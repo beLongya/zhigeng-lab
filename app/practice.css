@@ -1,0 +1,498 @@
+.sidebar {
+  display: flex;
+  flex-direction: column;
+  position: sticky;
+  top: 0;
+  height: 100vh;
+}
+
+output.status {
+  display: block;
+}
+.guided-mode {
+  margin-top: 24px;
+  padding-top: 18px;
+  border-top: 1px solid #dce5ed;
+}
+.guided-mode summary {
+  font-size: 14px;
+  color: #57718a;
+  cursor: pointer;
+}
+.brand {
+  text-decoration: none;
+  white-space: nowrap;
+  gap: 8px;
+}
+.brand span {
+  font-size: 10px;
+  color: #82a8c5;
+  letter-spacing: 1px;
+}
+.side-label {
+  font-size: 12px;
+  letter-spacing: 2px;
+  margin: 45px 0 18px;
+  color: #8eabc1;
+}
+.nav-item {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  font-size: 14px;
+}
+.side-motto {
+  font-size: 23px;
+  line-height: 1.8;
+  margin: 50px 8px;
+  color: #acc6da;
+}
+.side-bottom {
+  margin-top: auto;
+  font-size: 12px;
+  color: #8ba9bf;
+}
+header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.slash {
+  margin: 0 12px;
+  color: #90a4b5;
+}
+.pill {
+  font-size: 12px;
+  background: #eef4f8;
+  border: 1px solid #dce5ed;
+  padding: 3px 10px;
+  border-radius: 20px;
+  color: #537088;
+}
+.content {
+  max-width: 1280px;
+}
+.eyebrow span {
+  font-weight: 400;
+  margin-left: 14px;
+  color: #748b9c;
+  letter-spacing: 1px;
+}
+.lead {
+  font-size: 16px;
+}
+.steps {
+  display: flex;
+  margin: 34px 0 0;
+  border-bottom: 1px solid #dae4ed;
+}
+.steps > div {
+  display: flex;
+  align-items: center;
+  gap: 9px;
+  flex: 1;
+  font-size: 14px;
+  color: #7b92a4;
+  padding-bottom: 16px;
+  border-bottom: 2px solid transparent;
+}
+.steps > div > span {
+  width: 24px;
+  height: 24px;
+  border: 1px solid #c6d4e0;
+  border-radius: 50%;
+  display: grid;
+  place-items: center;
+  font-size: 12px;
+}
+.steps .current {
+  color: #125dcc;
+  border-color: #125dcc;
+  font-weight: 650;
+}
+.steps .current > span {
+  background: #125dcc;
+  color: white;
+  border-color: #125dcc;
+}
+.steps .done {
+  color: #257d64;
+}
+.work-grid {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) 270px;
+  gap: 24px;
+}
+.panel {
+  padding: 28px;
+}
+.section-head {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 22px;
+  gap: 8px;
+}
+h2 {
+  line-height: 1.5;
+}
+h3 {
+  font-size: 21px;
+  line-height: 1.6;
+  font-weight: 650;
+  margin: 14px 0;
+}
+.message {
+  display: flex;
+  gap: 14px;
+  padding: 20px;
+}
+.message small {
+  display: block;
+  font-size: 12px;
+  font-weight: 400;
+  color: #6c8498;
+}
+.avatar {
+  flex-shrink: 0;
+  width: 40px;
+  height: 40px;
+  display: grid;
+  place-items: center;
+  border-radius: 12px;
+  background: #d8e9fa;
+  color: #125dcc;
+  font-weight: 700;
+}
+.callout {
+  display: flex;
+  align-items: flex-start;
+  gap: 12px;
+  border-top: 1px solid #e2e9f0;
+  padding-top: 20px;
+}
+.callout p {
+  font-size: 14px;
+}
+.actions {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  align-items: center;
+  margin: 20px 0 6px;
+}
+button[data-slot='button'][data-variant='outline'] {
+  background: white;
+  color: #365873;
+  border-color: #cbdbe7;
+}
+button[data-slot='button']:disabled {
+  cursor: not-allowed;
+  opacity: 0.5;
+}
+.context .panel {
+  background: #eef4f9;
+}
+.context p {
+  font-size: 14px;
+}
+.context .caption {
+  font-size: 12px;
+}
+.context button {
+  width: 100%;
+}
+.context .actions button {
+  width: auto;
+}
+.context > p {
+  margin: 20px 6px;
+}
+.ability {
+  display: flex;
+  justify-content: space-between;
+  gap: 8px;
+  border-bottom: 1px solid #d7e3ed;
+  padding: 12px 0;
+  font-size: 12px;
+}
+.ability strong {
+  font-weight: 500;
+  color: #176b92;
+}
+.companion .avatar {
+  float: right;
+}
+.companion h3 {
+  font-size: 17px;
+}
+.person-tabs {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 8px;
+  margin: 20px 0;
+}
+.person-tabs button {
+  background: #f4f7fa;
+  border: 1px solid #dce5ec;
+  border-radius: 8px;
+  text-align: left;
+  padding: 12px;
+  cursor: pointer;
+}
+.person-tabs button.selected {
+  background: #eaf2ff;
+  border-color: #125dcc;
+  color: #125dcc;
+}
+.person-tabs small {
+  display: block;
+  font-size: 12px;
+  color: #668197;
+}
+.choice {
+  display: flex !important;
+  text-align: left;
+  justify-content: flex-start !important;
+  white-space: normal !important;
+  height: auto !important;
+  padding: 12px 16px !important;
+  width: 100%;
+  margin: 10px 0;
+  background: #fff !important;
+  border-color: #cbdbe7 !important;
+  color: #345871 !important;
+}
+.status {
+  font-size: 14px;
+  background: #edf4ff;
+  color: #315c87;
+  padding: 14px 16px;
+  border-radius: 8px;
+  margin: 20px 0 0;
+}
+.status.error {
+  background: #fff2ed;
+  color: #8d3f25;
+}
+.error p {
+  color: inherit;
+}
+label {
+  display: block;
+  font-size: 14px;
+  font-weight: 650;
+  margin: 18px 0 8px;
+}
+textarea[data-slot='textarea'] {
+  padding: 12px;
+  border-color: #c8d7e3;
+  font-size: 16px;
+  background: white;
+  min-height: 95px;
+}
+.large-input {
+  min-height: 180px !important;
+}
+.report {
+  min-height: 370px !important;
+}
+.note-row {
+  border-top: 1px solid #e0e8ef;
+  padding-top: 20px;
+  margin-top: 24px;
+}
+.note-row > small {
+  color: #698498;
+  font-size: 12px;
+}
+.note-row .message {
+  margin: 12px 0;
+}
+select {
+  width: 100%;
+  font-size: 14px;
+  padding: 10px;
+  border: 1px solid #c8d7e3;
+  border-radius: 8px;
+  background: white;
+}
+.skill-tags {
+  display: flex;
+  gap: 10px;
+  margin: 18px 0;
+}
+.skill-tags span {
+  padding: 6px 12px;
+  border-radius: 6px;
+  font-size: 14px;
+}
+.learned {
+  color: #146b4e;
+  background: #e8f6ed;
+}
+.not-yet {
+  color: #7a6c5e;
+  background: #f3eee7;
+}
+.comparison {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 14px;
+}
+.comparison > div {
+  padding: 20px;
+  background: #f3f5f8;
+  border-radius: 10px;
+}
+.comparison .after {
+  background: #edf6f5;
+  border: 1px solid #d7e9e3;
+}
+.comparison h3 {
+  font-size: 16px;
+  margin: 0 0 18px;
+}
+.comparison small {
+  font-size: 12px;
+  color: #6b8798;
+}
+.comparison p {
+  font-size: 14px;
+  margin: 7px 0 22px;
+}
+.preline {
+  white-space: pre-line;
+}
+.source-quote {
+  font-size: 12px;
+  border-left: 3px solid #80bca4;
+  padding-left: 12px;
+}
+.source-link {
+  color: #125dcc;
+  text-decoration: underline;
+  font-size: 14px;
+  overflow-wrap: anywhere;
+}
+.source-block {
+  margin-top: 20px;
+  border-top: 1px solid #cfdfeb;
+  padding-top: 18px;
+  font-size: 14px;
+}
+.source-block small {
+  font-size: 12px;
+}
+.source-block hr {
+  margin: 18px 0;
+}
+.method-card {
+  border: 1px solid #cfdfeb;
+  background: #f1f7fb;
+  padding: 22px;
+  border-radius: 10px;
+  margin-top: 24px;
+}
+.method-card p {
+  font-size: 14px;
+}
+.spin {
+  animation: spin 1s linear infinite;
+}
+@keyframes spin {
+  to {
+    transform: rotate(360deg);
+  }
+}
+@media (prefers-reduced-motion: reduce) {
+  .spin {
+    animation: none;
+  }
+}
+@media (max-width: 1100px) {
+  .workspace {
+    grid-template-columns: 190px 1fr;
+  }
+  .content {
+    padding: 32px;
+  }
+  .work-grid {
+    grid-template-columns: 1fr;
+  }
+  .context {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 20px;
+  }
+  .context .panel {
+    margin-top: 0;
+  }
+  .context > p {
+    margin: 0;
+  }
+  .sidebar {
+    padding: 30px 18px;
+  }
+}
+@media (max-width: 700px) {
+  .workspace {
+    display: block;
+  }
+  .sidebar {
+    position: relative;
+    height: auto;
+    padding: 16px 20px;
+  }
+  .side-label,
+  .side-motto,
+  .side-bottom,
+  .nav-item {
+    display: none;
+  }
+  .content {
+    padding: 24px 18px;
+  }
+  header .pill {
+    display: none;
+  }
+  .steps {
+    gap: 14px;
+    overflow: auto;
+  }
+  .steps > div {
+    min-width: 84px;
+    font-size: 12px;
+    gap: 6px;
+  }
+  .panel {
+    padding: 20px;
+  }
+  .context {
+    display: block;
+  }
+  .context .panel {
+    margin: 18px 0;
+  }
+  .comparison {
+    grid-template-columns: 1fr;
+  }
+  .person-tabs {
+    gap: 5px;
+  }
+  .person-tabs button {
+    padding: 9px;
+  }
+  .person-tabs small {
+    font-size: 11px;
+  }
+  .section-head .pill {
+    font-size: 11px;
+  }
+  .message {
+    padding: 16px;
+  }
+  .content h1 {
+    font-size: 32px;
+  }
+}
