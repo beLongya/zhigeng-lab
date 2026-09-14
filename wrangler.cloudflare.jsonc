@@ -1,0 +1,20 @@
+{
+  "$schema": "node_modules/wrangler/config-schema.json",
+  "name": "zhixing-lab",
+  "account_id": "53c1b666443a9dc62c4ab1e057ad7df1",
+  "main": "vinext/server/fetch-handler",
+  "compatibility_date": "2026-05-15",
+  "compatibility_flags": ["nodejs_compat"],
+  "workers_dev": true,
+  "observability": { "enabled": false },
+  "vars": {
+    "ZHIHU_OAUTH_APP_ID": "419",
+    "ZHIHU_OAUTH_REDIRECT_URI": "https://zhixing-lab.zhixing-campus.workers.dev/callback"
+  },
+  "d1_databases": [{
+    "binding": "ZHIHU_AUTH_DB",
+    "database_name": "zhixing-lab-auth",
+    "database_id": "18b36f46-2efa-4c07-a54c-5c52949b2939",
+    "migrations_dir": "migrations"
+  }]
+}
