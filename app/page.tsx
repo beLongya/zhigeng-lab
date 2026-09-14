@@ -300,7 +300,7 @@ export default function Page() {
     );
     const a = document.createElement('a');
     a.href = url;
-    a.download = '知行实验室-课题记录.md';
+    a.download = '知更Lab-课题记录.md';
     document.body.appendChild(a);
     a.click();
     a.remove();
@@ -351,9 +351,9 @@ export default function Page() {
   return (
     <div className={`x-app x-${theme}`}>
       <header className="x-header">
-        <Link className="x-logo" href="/" aria-label="知行实验室首页">
+        <Link className="x-logo" href="/" aria-label="知更 Lab 首页">
           <Compass size={32} />
-          <span>知行实验室</span>
+          <span>知更 Lab</span>
         </Link>
         <nav>
           <button
